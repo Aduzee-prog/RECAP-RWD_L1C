@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+    box-shadow: 2px 2px 10px rgba(30, 30, 30, 0.493);
+}
+ul{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    list-style: none;
+}
+
+button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: royalblue;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 10px;
+    width: 200px;
+    margin-top: 20px;
+}
+
+.videocon{
+    border: 5px solid black;
+    width: fit-content;
+    height: fit-content;
+}
+
+.videocon1{
+    /* border: 5px solid black; */
+    width: fit-content;
+    height: fit-content;
+}
+
+.con{
+        display: flex;
+        justify-content: space-around;
+        padding: 30px;
+        align-items: center;
+}
+
+.con1{
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    align-items: center;
+    padding: 100px 0px;
+}
+
+.con2{
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    align-items: center;
+    padding: 100px 0px;
+}
+
+.con div h1{
+    font-size: 50px;
+}
+.con div p {
+    font-size: 20px;
+}
+
+.ham{
+    display: none;
+}
+
+
+@media screen and (max-width:850px) {
+    ul{
+        display: none;
+    }
+
+    nav{
+        justify-content: space-between;
+        padding: 10px;
+    }
+    .ham{
+        display: block;
+    }
+
+
+
+
+/* section responsiveness */
+
+.con{
+    flex-direction: column-reverse;
+    padding: 0px;
+}
+.videocon{
+    border: none;
+}
+.videocon video{
+    width: 100%;
+}
+.videocon1 video{
+    width: 100%;
+}
+
+
+.con div h1{
+    font-size: 40px;
+    text-align: center;
+}
+.con div p {
+    font-size: 16px;
+    text-align: center;
+
+}
+.con1{
+    flex-direction: column;
+    padding: 0px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.308);
+    margin-bottom: 70px;
+    height: 400px;
+}
+
+.con2{
+    flex-direction: column-reverse;
+    padding: 0px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.308);
+    margin-bottom: 70px;
+    height: 400px;
+}
+button{
+    width: 100%;
+}
+
+.btn{
+    padding: 5px 10px;
+}
+
+
+}
